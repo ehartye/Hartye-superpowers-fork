@@ -246,11 +246,11 @@ Each worktree is a separate directory tree. Dependency managers install into the
 
 ```bash
 # After creating each worktree, copy environment config
-cp .env "$WORKTREE_DIR/feature-1/.env"
+cp .env "$path/feature-1/.env"
 
 # Or if env differs per feature (different ports, different DB names):
 # Create a modified .env per worktree
-sed 's/PORT=3000/PORT=3001/' .env > "$WORKTREE_DIR/feature-1/.env"
+sed 's/PORT=3000/PORT=3001/' .env > "$path/feature-1/.env"
 ```
 
 **If `.env` contains secrets:** Ask the user rather than copying automatically. Never commit `.env` files.
