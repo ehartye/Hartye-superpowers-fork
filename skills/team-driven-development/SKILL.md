@@ -472,7 +472,7 @@ Escalate to human when:
 - Let agents claim same task (race condition)
 - Skip the shared task list (how do agents coordinate?)
 - Ignore messages from teammates (breaks collaboration)
-- Mix team and subagent approaches in same workflow
+- Mix team and subagent approaches within the same task/worktree (hybrid across phases is fine; keep each task on one approach)
 - Forget to budget for full sessions per agent
 
 **If agents conflict:**
