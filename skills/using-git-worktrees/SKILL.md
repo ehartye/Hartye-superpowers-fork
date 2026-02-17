@@ -291,9 +291,9 @@ Follow the same directory selection and safety verification as single worktrees.
 
 ```bash
 # From the manifest — shared dependencies first
-git worktree add "$WORKTREE_DIR/shared-dep-1" -b feature/shared-dep-1
-git worktree add "$WORKTREE_DIR/feature-1" -b feature/feature-1
-git worktree add "$WORKTREE_DIR/feature-2" -b feature/feature-2
+git worktree add "$path/shared-dep-1" -b feature/shared-dep-1
+git worktree add "$path/feature-1" -b feature/feature-1
+git worktree add "$path/feature-2" -b feature/feature-2
 ```
 
 Run project setup and baseline tests in each worktree (same as single worktree flow).
