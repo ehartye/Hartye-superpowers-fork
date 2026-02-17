@@ -178,7 +178,7 @@ When a shared dependency completes:
 ## Integration Order
 
 After all features complete:
-1. Merge features into base branch in dependency order (least dependent first)
+1. Merge features into base branch respecting the dependency graph: ensure all dependencies are merged before their dependents; for features at the same dependency depth (no dependency between them), merge in any order.
 2. Resolve conflicts at each merge
 3. Verify full test suite after final merge
 ````
