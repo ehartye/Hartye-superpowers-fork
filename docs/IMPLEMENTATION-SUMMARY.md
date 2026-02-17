@@ -130,9 +130,9 @@ Extensive documentation helps users decide when to use each approach:
 
 ### Minimal Code Changes
 
-No modifications to existing skills or workflows:
+Additive, backward-compatible updates to existing skills and workflows:
 - New skill added alongside existing ones
-- Existing subagent workflows unchanged
+- Existing subagent workflows preserved
 - No breaking changes
 - Low risk implementation
 

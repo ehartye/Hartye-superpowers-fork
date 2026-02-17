@@ -120,7 +120,7 @@ The manifest defines execution order and worktree-to-plan mapping:
 ````markdown
 # [Initiative Name] Coordination Manifest
 
-> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans or superpowers:subagent-driven-development per worktree. The orchestrator sequences deployments per this manifest.
+> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans, superpowers:subagent-driven-development, or superpowers:team-driven-development per worktree. The orchestrator sequences deployments per this manifest.
 
 **Features:**
 - Feature 1: [name] — `YYYY-MM-DD-<feature-1>.md`
@@ -196,7 +196,7 @@ After saving the plan, offer execution choice:
 
 ### Single-Feature Handoff
 
-**"Plan complete and saved to `docs/plans/<filename>.md`. Two execution options:**
+**Plan complete and saved to `docs/plans/<filename>.md`. Two execution options:**
 
 **1. Subagent-Driven (this session)** - I dispatch fresh subagent per task, review between tasks, fast iteration
 
@@ -217,7 +217,7 @@ After saving the plan, offer execution choice:
 
 When a coordination manifest exists:
 
-**"Multi-feature plan complete. Manifest and per-feature plans saved to `docs/plans/`. Execution options:**
+**Multi-feature plan complete. Manifest and per-feature plans saved to `docs/plans/`. Execution options:**
 
 **1. Orchestrated (this session)** - I act as orchestrator: create worktrees, sequence shared dependencies first, distribute to feature worktrees, then dispatch one agent per feature
 

@@ -110,9 +110,9 @@ export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
 
 **Required prompts:**
 - `team-lead-prompt.md` - Orchestrator and facilitator
-- `teammate-implementer-prompt.md` - Team-aware implementer
-- `teammate-reviewer-prompt.md` - Collaborative reviewer
-- `teammate-researcher-prompt.md` - Exploration and options
+- `team-implementer-prompt.md` - Team-aware implementer
+- `team-reviewer-prompt.md` - Collaborative reviewer
+- *(Researcher role currently has no dedicated prompt template; use the team lead or implementer prompt as a base, or derive a custom researcher prompt as needed.)*
 
 **Key differences from current prompts:**
 - Include team context and member roster
